@@ -1,0 +1,113 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  font-family: monospace;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 1000px;
+  height: 100%;
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+  margin: 10px;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.input-top {
+  display: flex;
+  flex-direction: column;
+  min-width: 600px;
+  height: 100%;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.input-top textarea {
+  height: 100px;
+}
+
+.card button {
+  margin-top: 10px;
+}
+
+.todos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px black solid;
+  height: 400px;
+  margin: 10px;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: burlywood;
+  box-shadow: 10px 5px 5px rgb(107, 107, 107);
+}
+
+.todo-info {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  font-size: 24px;
+}
+
+.todo-info input {
+  /* font-size: 24px; */
+  margin: 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .todos {
+    width: 250px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .todos {
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .input-top {
+    min-width: 300px;
+  }
+
+  .card h1 {
+    font-size: 24px;
+  }
+
+  .grid {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+  }
+
+  .todos {
+    width: 250px;
+    justify-content: center;
+    height: 100%;
+  }
+}
